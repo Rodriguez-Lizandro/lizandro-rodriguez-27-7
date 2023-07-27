@@ -1,0 +1,27 @@
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Dim variable As Integer
+        Console.WriteLine("esto es un texto o string del MENU")
+        Do Until variable = 4
+            Console.WriteLine("texto1")
+            Console.WriteLine("texto2")
+            Console.WriteLine("texto3")
+            Console.WriteLine("salir")
+            variable = Console.ReadLine
+            If variable = 1 Then
+                Console.WriteLine("estexto1")
+            ElseIf variable = 2 Then
+                Console.WriteLine("estexto2")
+            ElseIf variable = 4 Then
+                Console.WriteLine("estexto3")
+            End If
+            Console.WriteLine("estexto4")
+        Loop
+    End Sub
+
+    Private Function GetReadLine() As String
+        Return Console.ReadLine
+    End Function
+End Module
